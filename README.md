@@ -6,6 +6,19 @@ The core module will expose the basic functionality and engine for creating 'pre
 
 > This Project is not simply satisfied to classify 'infections' as simply viruses or deliberate malware, but to also seek out and destroy any software that violates the user's trust (ie, introduces privacy issues, leaks data, uses questionable practices to diminish the user's security, safety or stability, etc)
 
+## Isn't this just the same as antivirus software.
+Not entirely. 
+AV software is generally targeted at deliberately nasty software: Viruses,malware, trojans, etc. What they don't do, is look out for user's general well being. 
+
+What they don't do:
+- say something if there is a certificate installed that is capable of man-in-the-middle attacks.
+- remove browser toolbars that are feeding you ads. 
+- find the unsigned software on a system
+- watch for unsavory registry changes that indicate that something may be up to no good.
+(etc...)
+
+They (as far as I've seen) also don't make it easy to crowd-source detection and blocking of such things.
+
 ## Ideas:
  - a scriptable set of tools that can allow users to find and maniupulate 'infections'
  - a set of library functions for doing the low-level grunt-work
